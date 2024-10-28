@@ -1,0 +1,14 @@
+C:\Users\acer\source\repos\c#ch5\c#ch5\bin\Debug\c#ch5.exe.config
+C:\Users\acer\source\repos\c#ch5\c#ch5\bin\Debug\c#ch5.exe
+C:\Users\acer\source\repos\c#ch5\c#ch5\bin\Debug\c#ch5.pdb
+C:\Users\acer\source\repos\c#ch5\c#ch5\obj\Debug\c#ch5.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\c#ch5\c#ch5\obj\Debug\c#ch5.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\c#ch5\c#ch5\obj\Debug\c#ch5.exe
+C:\Users\acer\source\repos\c#ch5\c#ch5\obj\Debug\c#ch5.pdb
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\obj\Debug\c#ch5.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\obj\Debug\c#ch5.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\obj\Debug\c#ch5.exe
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\obj\Debug\c#ch5.pdb
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\bin\Debug\c#ch5.exe.config
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\bin\Debug\c#ch5.exe
+C:\Users\acer\Desktop\C#\c#ch5\c#ch5\bin\Debug\c#ch5.pdb
