@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +13,137 @@ namespace c_ch5
     {
         static void Main(string[] args)
         {
+            //例題5.1-利用一維陣列求10個數字的計算平均值。
+            //int[] numbers = new int[10];
+            //int sum = 0;
+            //Console.WriteLine("輸入10個數");
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    numbers[i] = Convert.ToInt32(Console.ReadLine());
+            //    sum += numbers[i];
+            //}
+            //double a =(double)sum/ numbers.Length;
+            //Console.WriteLine("平均值為:" + a);
+            //Console.ReadKey();
+
+            //例題5.2-利用一維陣列求10個數字的最大值。
+            //int[] numbers = new int[10];
+            //Console.WriteLine("輸入10個數");
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    numbers[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //int max = numbers[0];
+            //for (int i = 1; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] > max)
+            //    {
+            //        max = numbers[i];
+            //    }
+            //}
+            //Console.WriteLine("最大值為:" + max);
+            //Console.ReadKey();
+
+            //例題5.3-搜尋問題：輸入10個數字至A[ ]，再輸入x，
+            //判斷x是否存在於A陣列中，如果存在，輸出所在的註標(索引)值，
+            //若不存在，則告知不存在。
+            //int[] A = new int[10];
+            //Console.WriteLine("請輸入 10 個數字：");
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    A[i] = Convert.ToInt16(Console.ReadLine());
+            //}
+            //Console.WriteLine("請輸入收尋數字:");
+            //int x = Convert.ToInt16(Console.ReadLine());
+            //bool found = false;
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    if (A[i] == x)
+            //    {
+            //        Console.WriteLine($" {x} 在 A 陣列中，為第{i + 1}個數");
+            //        found = true;
+            //        break;
+            //    }
+            //}
+            //if (!found)
+            //{
+            //    Console.WriteLine("不存在陣列中");
+            //}
+            //Console.ReadKey();
+
+            //5.4流程圖
+            //int w = 3;//寬度-列
+            //int h = 2;//高度-行
+            //int[,] a = new int[h, w];
+            //int[,] b = new int[h, w];
+            //int[,] c = new int[h, w];
+            //Console.WriteLine("輸入a值:");
+            //for (int i = 0; i < h; i++)
+            //{
+            //    for (int j = 0; j < w; j++)
+            //    {
+            //        Console.Write($"a[{i},{j}]=");
+            //        a[i, j] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+            //Console.WriteLine("輸入b值:");
+            //for (int i = 0; i < h; i++)
+            //{
+            //    for (int j = 0; j < w; j++)
+            //    {
+            //        Console.Write($"b[{i},{j}]=");
+            //        b[i, j] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+            //Console.WriteLine("矩陣c:");
+            //for (int i = 0; i < h; i++)
+            //{
+            //    for (int j = 0; j < w; j++)
+            //    {
+            //        c[i, j] = a[i, j] + b[i, j];
+            //        Console.Write($"{c[i, j]} ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.ReadKey();
+
+            //例題5.5-求a=2*3矩陣b=3*1矩陣，結果存入c=2*1矩陣，
+            //最後將C矩陣的內容顯示出來。
+            int[,] a = new int[2, 3];
+            int[,] b = new int[3, 1];
+            int[,] c = new int[2, 1];
+            Console.WriteLine("請輸入a矩陣的值");
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"a[{i},{j}]=");
+                    a[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            Console.WriteLine("請輸入b矩陣的值");
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write($"b[{i},0]=");
+                b[i, 0] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                c[i, 0] = 0;
+                for (int j = 0; j < 3; j++)
+                {
+                    c[i, 0] += a[i, j] * b[j, 0];
+                }
+            }
+            Console.WriteLine("c=(a+b),c巨陣為;");
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine($"c[{i},0]={c[i, 0]}");
+            }
+            Console.ReadKey();
+
+            //-------------------------------------------------------------
+
             //5-1將10個數字讀入A陣列，然後逐一檢查此陣列，
             //如A[i]>5，則令A[i]=A[i]-5，否則A[i]=A[i]+5。
             //int[] a = new int[10];
