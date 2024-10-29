@@ -109,38 +109,38 @@ namespace c_ch5
 
             //例題5.5-求a=2*3矩陣b=3*1矩陣，結果存入c=2*1矩陣，
             //最後將C矩陣的內容顯示出來。
-            int[,] a = new int[2, 3];
-            int[,] b = new int[3, 1];
-            int[,] c = new int[2, 1];
-            Console.WriteLine("請輸入a矩陣的值");
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write($"a[{i},{j}]=");
-                    a[i, j] = Convert.ToInt32(Console.ReadLine());
-                }
-            }
-            Console.WriteLine("請輸入b矩陣的值");
-            for (int i = 0; i < 3; i++)
-            {
-                Console.Write($"b[{i},0]=");
-                b[i, 0] = Convert.ToInt32(Console.ReadLine());
-            }
-            for (int i = 0; i < 2; i++)
-            {
-                c[i, 0] = 0;
-                for (int j = 0; j < 3; j++)
-                {
-                    c[i, 0] += a[i, j] * b[j, 0];
-                }
-            }
-            Console.WriteLine("c=(a+b),c巨陣為;");
-            for (int i = 0; i < 2; i++)
-            {
-                Console.WriteLine($"c[{i},0]={c[i, 0]}");
-            }
-            Console.ReadKey();
+            //int[,] a = new int[2, 3];
+            //int[,] b = new int[3, 1];
+            //int[,] c = new int[2, 1];
+            //Console.WriteLine("請輸入a矩陣的值");
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.Write($"a[{i},{j}]=");
+            //        a[i, j] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //}
+            //Console.WriteLine("請輸入b矩陣的值");
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.Write($"b[{i},0]=");
+            //    b[i, 0] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    c[i, 0] = 0;
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        c[i, 0] += a[i, j] * b[j, 0];
+            //    }
+            //}
+            //Console.WriteLine("c=(a+b),c巨陣為;");
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    Console.WriteLine($"c[{i},0]={c[i, 0]}");
+            //}
+            //Console.ReadKey();
 
             //-------------------------------------------------------------
 
